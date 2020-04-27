@@ -1,3 +1,3 @@
-# Increment Button Challenge
+# ChangeMe Button Challenge
 
-A React challenge
+Do you like "Mickey Mouse". Make the "Like" button work to see.
