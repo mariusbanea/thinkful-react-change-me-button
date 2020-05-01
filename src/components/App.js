@@ -18,8 +18,8 @@ export default class App extends React.Component {
         console.log(name);
         return (
             <div className="parent">
-                <span>{ isLiked ? "yay!": "nay!" }</span>
                 <ChangeMeButton name={name} onToggleClick={() => this._toggleLikeState()} />
+                <span>{ isLiked ? "yay!": "nay!" }</span>
             </div>
         );
     }
