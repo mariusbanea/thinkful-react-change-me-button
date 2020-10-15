@@ -7,7 +7,7 @@ export default class App extends React.Component {
         this.state = { isLiked: false, name: "Mickey Mouse" };
     }
 
-    _toggleLikeState = () => {
+    toggleLikeState = () => {
         this.setState({
             isLiked: !this.state.isLiked
         });
@@ -16,11 +16,16 @@ export default class App extends React.Component {
     render() {
         const { name, isLiked } = this.state;
         console.log(name);
-        return (
-            <div className="parent">
-                <ChangeMeButton name={name} onToggleClick={() => this._toggleLikeState()} />
-                <span>{ isLiked ? "yay!": "nay!" }</span>
-            </div>
+        return ( <
+            div className = "parent" >
+            <
+            ChangeMeButton name = { name }
+            onToggleClick = {
+                () => this.toggleLikeState()
+            }
+            /> <
+            span > { isLiked ? "yay!" : "nay!" } < /span> < /
+            div >
         );
     }
 }
