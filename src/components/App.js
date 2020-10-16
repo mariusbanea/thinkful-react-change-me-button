@@ -16,16 +16,11 @@ export default class App extends React.Component {
     render() {
         const { name, isLiked } = this.state;
         console.log(name);
-        return ( <
-            div className = "parent" >
-            <
-            ChangeMeButton name = { name }
-            onToggleClick = {
-                () => this.toggleLikeState()
-            }
-            /> <
-            span > { isLiked ? "yay!" : "nay!" } < /span> < /
-            div >
+        return (
+            <div className="parent">
+                <ChangeMeButton name={name} onToggleClick={() => this.toggleLikeState()} />
+                <span>{ isLiked ? "yay!": "nay!" }</span>
+            </div>
         );
     }
 }
